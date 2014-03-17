@@ -1,0 +1,29 @@
+<h1>Listing antennas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Asset token</th>
+      <th>Payload</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @antennas.each do |antenna| %>
+      <tr>
+        <td><%= antenna.access_token %></td>
+        <td><%= antenna.payload %></td>
+        <td><%= link_to 'Show', antenna %></td>
+        <td><%= link_to 'Edit', edit_antenna_path(antenna) %></td>
+        <td><%= link_to 'Destroy', antenna, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Antenna', new_antenna_path %>

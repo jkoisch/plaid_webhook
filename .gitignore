@@ -11,3 +11,9 @@ test/dummy/.sass-cache
 /.idea/workspace.xml
 
 runConfigurations
+
+.rakeTasks
+
+/.idea/.rakeTasks
+
+/.idea/plaid_webhook.iml
