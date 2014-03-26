@@ -17,3 +17,5 @@ runConfigurations
 /.idea/.rakeTasks
 
 /.idea/plaid_webhook.iml
+
+/.idea/misc.xml

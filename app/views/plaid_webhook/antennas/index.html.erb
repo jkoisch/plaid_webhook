@@ -3,7 +3,8 @@
 <table>
   <thead>
     <tr>
-      <th>Asset token</th>
+      <th>created</th>
+      <th>Access Token</th>
       <th>Payload</th>
       <th></th>
       <th></th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @antennas.each do |antenna| %>
       <tr>
+        <td><%= antenna.created_at %></td>
         <td><%= antenna.access_token %></td>
         <td><%= antenna.payload %></td>
         <td><%= link_to 'Show', antenna %></td>
